@@ -15,6 +15,7 @@ import vn.edu.hust.soict.soe.assetmanagement.asset.entity.FixedAsset;
 import vn.edu.hust.soict.soe.assetmanagement.asset.enums.AssetStatus;
 import vn.edu.hust.soict.soe.assetmanagement.asset.repository.AssetHistoryRepository;
 import vn.edu.hust.soict.soe.assetmanagement.asset.repository.FixedAssetRepository;
+import vn.edu.hust.soict.soe.assetmanagement.audit.service.AuditLogService;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -39,6 +40,9 @@ class FixedAssetServiceTest {
 
     @InjectMocks
     private FixedAssetService fixedAssetService;
+
+    @Mock
+    private AuditLogService auditLogService;
 
     // ── Shared test data ──────────────────────────────────────
 

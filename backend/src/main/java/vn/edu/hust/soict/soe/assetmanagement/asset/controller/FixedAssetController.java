@@ -6,6 +6,7 @@ import vn.edu.hust.soict.soe.assetmanagement.asset.entity.FixedAsset;
 import vn.edu.hust.soict.soe.assetmanagement.asset.enums.AssetStatus;
 import vn.edu.hust.soict.soe.assetmanagement.asset.service.FixedAssetService;
 import vn.edu.hust.soict.soe.assetmanagement.asset.repository.AssetHistoryRepository; // Import thêm để lấy lịch sử
+
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
